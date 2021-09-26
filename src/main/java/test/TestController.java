@@ -16,6 +16,7 @@ public class TestController {
     public Bread createBread(BreadType type, Recipe recipe) {
         Bread bread = BreadFactory.createBread(type, recipe);
         System.out.println("첫번째 문제 result : " + bread);
+
         return bread;
     }
 
