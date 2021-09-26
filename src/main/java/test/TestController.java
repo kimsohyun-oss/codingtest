@@ -37,7 +37,7 @@ public class TestController {
     }
 
 
-    // TODO : 데이터 표현범위 초과 해결
+    // TODO
     public Long fixStackOverFlow(int bigNum) {
         FixStackOverFlow fixStackOverFlow = new FixStackOverFlow();
         Long result = fixStackOverFlow.fix(bigNum);
@@ -46,17 +46,22 @@ public class TestController {
         return result;
     }
 
-    public List pond() {
+    public int pond() {
         Pond pond = new Pond();
-        List digitalPond = pond.calculate();
+        List<Integer> digitalPond = pond.calculate();
 
+        int pondDepth = 0;
         System.out.println("다섯번째 문제 result :");
         for (int i = 1 ; i <= digitalPond.size(); i++) {
-            System.out.print(digitalPond.get(i-1));
+            Integer depth = digitalPond.get(i - 1);
+            pondDepth = pondDepth + depth;
+            System.out.print(depth);
             if (i%10 == 0) {
                 System.out.println("\n");
             }
         }
-        return digitalPond;
+
+        System.out.println("연못 깊이 : " + pondDepth);
+        return pondDepth;
     }
 }

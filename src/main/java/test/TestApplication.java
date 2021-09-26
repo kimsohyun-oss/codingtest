@@ -14,7 +14,7 @@ public class TestApplication {
         testController.createBread(BreadType.CREAM, new Recipe(100, 50, 200));
         testController.calculateNum();
         testController.factorial(4);
-        testController.fixStackOverFlow(1000000);
+        testController.fixStackOverFlow(100);
         testController.pond();
     }
 }

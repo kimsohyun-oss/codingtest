@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Pond {
-    public List calculate() {
+    public List<Integer> calculate() {
 
         String pond = "0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 1 1 1 1 1 1 0 0 0 0 1 1 1 1 1 1 1 1 0 0 1 1 1 1 1 1 1 1 0 0 0 1 1 1 1 1 1 0 0 0 0 0 1 1 1 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0";
         Integer[] integers = Arrays.stream(pond.split(" ")).mapToInt(Integer::parseInt).boxed().toArray(Integer[]::new);
