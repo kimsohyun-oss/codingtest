@@ -1,0 +1,33 @@
+package codingTest;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int[] number = {5,5,3,1,2,4};
+		ArrayList<Integer> numberAr = new ArrayList<Integer>();
+		for(int i = 0; i< number.length;i++) {
+			numberAr.add(number[i]);
+		}
+		numberAr.sort(null);
+		for(int i=0; i<numberAr.size();i++) {
+			if(numberAr.get(i)>=1 && numberAr.get(i) <=1000) {
+				
+				for(int z=0;z<numberAr.size();z++) {
+					if(numberAr.get(i)==numberAr.get(z)) {
+						
+						System.out.println(numberAr.get(i));
+					}
+				}
+				
+			}
+		}
+		
+	}
+
+}

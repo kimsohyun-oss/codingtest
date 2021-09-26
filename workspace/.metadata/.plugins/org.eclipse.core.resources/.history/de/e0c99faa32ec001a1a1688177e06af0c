@@ -1,0 +1,28 @@
+package codingTest;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("숫자를 입력하시오:");
+		int number2 = sc.nextInt();
+		int[] number = {5,5,3,1,2,4,6,6,4,3,4,2,1};
+		ArrayList<Integer> numberAr = new ArrayList<Integer>();
+		for(int i = 0; i< number.length;i++) {
+			if(!numberAr.contains(number[i])) {
+				numberAr.add(number[i]);
+			}		
+		}
+		numberAr.sort(null);
+		System.out.println(numberAr);
+		
+		
+	}
+
+}

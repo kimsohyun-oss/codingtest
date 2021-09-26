@@ -1,0 +1,32 @@
+package codingTest;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("숫자를 입력하시오:");
+		String number2 = sc.nextLine();
+		String[] number = number2.split("");
+	
+		ArrayList<String> numberAr = new ArrayList<String>();
+		for(int i = 0; i< number.length;i++) {
+			if(!numberAr.contains(number[i])) {
+				numberAr.add(number[i]);
+			}		
+		}
+		numberAr.sort(null);
+		for(int i =0;i<numberAr.size();i++) {
+			
+			System.out.println(numberAr.get(i));
+		}
+		
+		
+	}
+
+}
