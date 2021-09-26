@@ -1,4 +1,4 @@
-# codingtest
+# vcanus_codingtest
 
 5번 문제 출력값
 
